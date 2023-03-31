@@ -1,29 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations of three different digits,
+ * main - Prints all possible combinations of three different numbers a,b,c,
  *        in ascending order, separated by a comma followed by a space.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int u = '0';
-	int d = '0';
+	int a = '0';
+	int b = '0';
 	int c = '0';
 
 	for (c = '0'; c <= '9'; c++)
 	{
-		for (d = '0'; d <= '9'; d++)
+		for (b = '0'; b <= '9'; b++)
 		{
-			for (u = '0'; u <= '9'; u++)
+			for (a = '0'; a <= '9'; a++)
 			{
-				if (!((u == d) || (d == c) || (d > u) || (c > d)))
+				if (!((a == b) || (b == c) || (b > a) || (c > b)))
 				{
 					putchar(c);
-					putchar(d);
-					putchar(u);
-					if (!(u == '9' && c == '7' && d == '8'))
+					putchar(b);
+					putchar(a);
+					if (!(a == '9' && c == '7' && b == '8'))
 					{
 						putchar(',');
 						putchar(' ');

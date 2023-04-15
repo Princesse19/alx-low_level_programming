@@ -19,14 +19,10 @@ int main(void)
 
 			if (a1 == 8 && b2 == 9)
 				continue;
-			
 			putchar(',');
 			putchar(' ');
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
-
